@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 600px;
+            border: 2px solid red;
+            margin:50px auto;
+        }
+
+        .box p::selection{
+            background-color: greenyellow;
+            color: red;
+
+        }
+        .box p::first-line{
+            background-color: blueviolet;
+            font-size: 22px;
+        }
+
+        .box p::first-letter{
+            font-size: 35px;
+            color: rgb(194, 10, 10);
+        }
+        .box p span{
+            background-color: bisque;
+        }
+        .ws{
+            width: 400px;
+            height: 400px;
+            background-color: red;
+            margin: 50px auto;
+            transition: 1s;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .ws:hover{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(163, 218, 10);
+            color: white;
+            font-size: 40px;
+        }
+
+        .outer{
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+            margin: 50px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .inner{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            transition: 1000ms;
+            /* display: none; */
+          
+            visibility: hidden;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .outer:hover .inner{
+          
+            /* display: block; */
+            opacity: 1;
+            visibility: visible;
+            
+            
+        }
+
+        .a{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+        }
+
+         .b{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(195, 110, 110);
+            margin: 5px ;
+        }
+
+        .a:hover ~ .b{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <div class="box">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, porro debitis. Doloremque nobis asperiores dicta! Consequuntur est deserunt inventore reprehenderit at iste  <span>Pradeep</span> asperiores ipsam minima voluptate quaerat? Nesciunt, sit eaque?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora soluta officiis temporibus quod a voluptatibus quidem quaerat eveniet! Quas consequuntur autem ut! Consequatur quibusdam saepe recusandae. Iure magnam vero dolore.
+        </p>
+    </div> -->
+
+    <div class="ws">
+        hello ws student
+    </div>
+
+    <div class="outer">
+        <div class="inner"></div>
+        hello class
+    </div>
+
+
+    <div class="a"></div>
+
+    <div class="b"></div>
+    <div class="b"></div>
+    <div class="b"></div>
+    <div class="b"></div>
+    <div class="b"></div>
+    
+</body>
+</html>
