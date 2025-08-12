@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            height: 2000px;
+        }
+
+        .box {
+
+            background-color: rgb(20, 195, 52);
+            color: white;
+            font-size: 40px;
+            position: fixed;
+            left: 95%;
+            top: 60%;
+        }
+        .header{
+            width: 100%;
+            padding: 30px 0;
+            background-color: aqua;
+            text-align: center;
+            position: sticky;
+            top: 0px;
+            z-index: 99;
+        }
+
+        .parent{
+            width: 600px;
+            height: 400px;
+            background-color: #ccc;
+            position: relative;
+            left: 200px;
+            top: 20px;
+        }
+        .child-a{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            left: 250px;
+            top: 50px;
+        }
+        .child-b{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+
+        .inner-a{
+            width: 80px;
+            height: 80px;
+            background-color: yellow;
+            position: absolute;
+            left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1> Header </h1>
+    </div>
+    <div class="box"> <i class="fa-brands fa-square-whatsapp"></i> </div>
+    <p>
+       Ws Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, nostrum. Obcaecati explicabo a quibusdam
+        asperiores quod, facilis aut commodi, adipisci placeat eligendi soluta quis veniam? Repellendus quia qui
+        laboriosam dicta.
+
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, inventore quis quia deleniti aut expedita
+        doloremque necessitatibus sint doloribus pariatur obcaecati saepe. Alias asperiores illum quasi itaque pariatur
+        hic recusandae!
+
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, dolores porro asperiores harum deserunt omnis
+        commodi, id ut quaerat, in excepturi quisquam ullam? Nemo excepturi optio harum id delectus aperiam!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad modi veniam possimus doloremque suscipit
+        consequuntur adipisci, nihil ab quaerat tempora veritatis, inventore voluptatum ut. Tempore consectetur
+        distinctio iure nostrum incidunt.
+
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, eaque velit eos est soluta explicabo
+        nobis beatae harum amet earum hic, dolorem deserunt sapiente, qui alias vero consequatur aspernatur atque.
+
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ab fugit, debitis officiis nesciunt laborum
+        fugiat a ex, temporibus laudantium unde pariatur quisquam in reiciendis quod culpa eum delectus tempore?
+    </p>
+
+
+
+    <div class="parent">
+        <div class="child-a">
+            <div class="inner-a"></div>
+        </div>
+
+        <div class="child-b"></div>
+    </div>
+
+</body>
+
+</html>

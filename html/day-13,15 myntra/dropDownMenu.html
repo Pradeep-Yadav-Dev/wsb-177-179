@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .header {
+            width: 1000px;
+            margin: auto;
+            background-color: #ccc;
+            padding: 15px;
+            position: relative;
+        }
+
+        .header>ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .subMenu {
+            background-color: aqua;
+            padding: 12px;
+            position: absolute;
+            top: 110%;
+            left: 10%;
+            opacity: 1;
+            visibility: hidden;
+            transition: 0.8s;
+        }
+
+        .header ul li:hover .subMenu {
+            opacity: 1;
+            visibility: visible;
+            top: 100%;
+        }
+
+        .subSubmenu {
+            width: 150px;
+            background-color: blueviolet;
+            position: absolute;
+            top: 15%;
+            left: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.5s;
+        }
+
+        .subMenu ul li:hover .subSubmenu {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <ul>
+            <li>Home
+                <div class="subMenu">
+                    <ul>
+                        <li>Home 1
+                            <div class="subSubmenu">
+                                <ul>
+                                    <li>Inner Home 1</li>
+                                    <li>Inner Home 2</li>
+                                    <li>Inner Home 3</li>
+                                    <li>Inner Home 4</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>Home 2</li>
+                        <li>Home 3</li>
+                        <li>Home 4</li>
+                    </ul>
+                </div>
+            </li>
+            <li>About</li>
+            <li>Gallery</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+</body>
+
+</html>

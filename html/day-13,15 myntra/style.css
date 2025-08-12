@@ -11,6 +11,7 @@
     display: flex;
     box-shadow: 0px 0px 10px 0.5px #ccc;
     padding: 10px 0px;
+    position: relative;
 
 }
 
@@ -25,17 +26,19 @@
     width: 50%;
     display: flex;
     align-items: center;
-    
+
 }
+
 .menu {
     width: 80%;
     /* border: 2px solid red; */
 }
-.menu ul {
+
+.menu>ul {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    
+
 }
 
 .logo {
@@ -47,19 +50,21 @@
     width: 100%;
 }
 
-.menu ul li {
-    
+.menu>ul>li {
+
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 700;
+    cursor: pointer;
+    
 }
 
 
-.header sup{
+.header sup {
     color: red;
 }
 
-.header .input{
+.header .input {
     width: 40%;
     border: 1px solid #ccc;
     padding: 10px;
@@ -68,13 +73,45 @@
     gap: 15px;
     border-radius: 4px;
 }
-.header .input i{
+
+.header .input i {
     font-size: 14px;
 }
-.header .input input{
+
+.header .input input {
     border: none;
     outline: none;
     background-color: transparent;
 }
 
 
+
+.subMenu {
+    width: 1000px;
+    height: 400px;
+   box-shadow: 0px 0px 10px 4px #ccc;
+   padding: 20px;
+    position: absolute;
+    top: 100%;
+    left: 8% ;
+    display: flex;
+    visibility: visible;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.subMenuBox{
+    width: 20%;
+    border: 1px solid red;
+}
+.subMenuBox>ul>li{
+    margin: 10px 0px;
+    font-size: 15px;
+    font-weight: normal;
+    
+}
+
+.menu ul li:hover .subMenu{
+    opacity: 1;
+    visibility: visible;
+}
