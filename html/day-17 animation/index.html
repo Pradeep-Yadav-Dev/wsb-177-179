@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes rotateBox{
+            0%{
+                transform: rotate(0deg);
+            }
+           
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin: 50px auto;
+            animation:rotateBox 2s 0s infinite linear;
+        }
+        .box img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .ws{
+             width: 200px;
+            height: 200px;
+            background-color: red;
+            margin: 50px auto;
+            animation:rotateBox 2s 1s infinite linear;
+        }
+
+        @keyframes carMove{
+            0%{
+              
+                top: 60%;
+                left: 0%;
+            }
+             100%{
+              
+                top: 40%;
+                left: 90%;
+            }
+        }
+        .car{
+            width: 150px;
+              position: fixed;
+            animation: carMove 5s 0s infinite linear;
+           
+        }
+        .car img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <img src="https://packshifts.in/images/bike-shifting.jpg" alt="">
+    </div>
+
+
+    <!-- <div class="ws"></div> -->
+
+    <div class="car">
+        <img src="https://img.freepik.com/premium-psd/sport-car-transparent-background-3d-rendering-illustration_494250-41291.jpg" alt="">
+    </div>
+    
+</body>
+</html>
