@@ -1,0 +1,42 @@
+@media only screen and (min-width:200px) and (max-width:567px) {
+    header .innderHeader aside:nth-child(2) {
+        display: none;
+
+    }
+    header .innderHeader aside:nth-child(1) {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* banner start */
+    #banner{
+        padding-top: 0px;
+        padding-bottom: 60px;
+    }
+    #banner .left {
+        width: 100%;
+        text-align: center;
+    }
+    #banner .left h2{
+        font-size: 25px;
+    }
+     #banner .left h3{
+        font-size: 22px;
+        padding: 0;
+    }
+
+     #banner .left h4{
+        font-size: 15px;
+        padding: 18px 0px;
+    }
+
+    #banner .right {
+        height: 400px;
+        width: 92%;
+        margin: auto;
+    }
+}
+
+
+
+/* @media only screen and (min-width:568px) and (max-width:991px) {} */
