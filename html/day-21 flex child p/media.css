@@ -1,0 +1,19 @@
+/* for mobile */
+@media only screen and (min-width:0px) and (max-width:567px) {
+     .box {
+        width: 98%;
+        margin: 1%;
+       
+    }
+}
+
+
+
+/* for Tab */
+@media only screen and (min-width:568px) and (max-width:991px) {
+    .box {
+        width: 48%;
+        margin: 1%;
+       
+    }
+}
