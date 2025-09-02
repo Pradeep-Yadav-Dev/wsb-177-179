@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    // let a=[11,88,44,99,"ws",66]
+
+    // console.log(a)
+
+    // // console.log(a.slice(2,12))
+
+    // console.log(a.splice(2,1))
+
+    // console.log(a)
+
+
+    // let a=Math.random() *100
+    // console.log(a)
+
+    // let output=Math.ceil(a)
+
+    // console.log(output)
+
+
+    // console.log(a.length)
+
+    // console.log(a[2])
+
+    // console.log(a[12])
+
+    // console.log(a[5][2][3])
+
+    // a.pop()
+    // a.pop()
+    // a.shift()
+
+    // console.log(a)
+
+
+    // let x=[99,88,55,77,33,22,11,0]
+
+    // let newArr=[]
+
+    // for(let i of x){
+    //    newArr.unshift(i+10)
+    // }
+
+    // console.log(newArr)
+
+    // for(let k in x){
+    //     // console.log(x[k])
+    // }
+
+    //////////////////////////////////////////////
+
+    let x=[-99,22,9,6,10,-8,88]
+
+    let maxValue=-Infinity
+    let secMaxValue=-Infinity
+
+
+    for(a of x){
+        if(a>maxValue){
+            maxValue=a
+        }
+    }
+
+    for(b of x){
+        if(b>secMaxValue && b<maxValue ){
+            secMaxValue=b
+        }
+    }
+
+    console.log(maxValue , secMaxValue)
+  
+
+
+</script>
+</html>
