@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bigBox{
+            width: 1000px;
+            height: 200px;
+            padding: 10px;
+            border: 5px solid;
+            margin: auto;
+        }
+        button{
+            padding: 25px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box"></div> -->
+
+    <div class="bigBox"></div>
+
+    <button onclick="userFn()" >save</button>
+
+    <button onclick="clearss()" > clear </button>
+</body>
+<script>
+    // let box=document.querySelector(".box")
+
+    // box.innerHTML=" <h1> hello ws students </h1> "
+    // box.style.color="red"
+
+    let bigBox=document.querySelector(".bigBox")
+
+    let userFn=function(){
+
+        bigBox.innerHTML="rom amenities such as landscaped gardens, swimming pool, gym, indoor games and clubhouse to advanced security systems and promoting community living, make the perfect choice to buy an apartment in Zirakpur at Uptown Skylla luxury flats. Each apartment has been carefully designed to maximize the utilization of space,"
+    }
+
+
+    function clearss(){
+       bigBox.innerHTML=""
+    }
+    
+
+
+
+</script>
+</html>

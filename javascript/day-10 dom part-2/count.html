@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+        <button onclick="dec()">-</button>
+        <h2> 1 </h2>
+        <button onclick="inc()" >+</button>
+
+    </div>
+</body>
+<script>
+
+    let h2=document.querySelector("h2")
+    let count=0
+   
+
+    let inc=()=>{
+        count++
+        h2.innerHTML=count
+    }
+
+    let dec=()=>{
+        if(count>1){
+            count--
+             h2.innerHTML=count
+        }
+        
+        
+    }
+</script>
+</html>
