@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .main {
+            max-width: 1200px;
+            /* border: 2px solid red; */
+            padding: 10px;
+            margin: 20px auto;
+        }
+
+        .faq {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .question {
+            background-color: #2D2D2D;
+            padding: 15px;
+            margin: 0;
+
+        }
+
+        .answer {
+            background-color: #4d4a4a;
+            padding: 15px;
+            margin: 0;
+            display: none;
+        }
+
+        .activeClass{
+            display: block !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1> Frequently Asked Questions </h1>
+
+        <div class="faq">
+            <h2 class="question">
+                1. What is Netflix?
+            </h2>
+            <p class="answer">
+                Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+                documentaries and more – on thousands of internet-connected devices.
+            </p>
+        </div>
+
+        <div class="faq">
+            <h2 class="question">
+                2. What is Netflix?
+            </h2>
+            <p class="answer">
+                Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+                documentaries and more – on thousands of internet-connected devices.
+            </p>
+        </div>
+
+        <div class="faq">
+            <h2 class="question">
+                3. What is Netflix?
+            </h2>
+            <p class="answer">
+                Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+                documentaries and more – on thousands of internet-connected devices.
+            </p>
+        </div>
+
+        <div class="faq">
+            <h2 class="question">
+                4. What is Netflix?
+            </h2>
+            <p class="answer">
+                Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+                documentaries and more – on thousands of internet-connected devices.
+            </p>
+        </div>
+
+        <div class="faq">
+            <h2 class="question">
+                5. What is Netflix?
+            </h2>
+            <p class="answer">
+                Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+                documentaries and more – on thousands of internet-connected devices.
+            </p>
+        </div>
+    </div>
+
+</body>
+<script>
+    let allQuestion=document.querySelectorAll(".question")
+
+    allQuestion.forEach((v,i)=>{
+       v.addEventListener("click" ,()=>{ 
+
+            allQuestion.forEach((p,k)=>{
+                if(i!=k){
+                   p.nextElementSibling.classList.remove("activeClass")
+                }
+            })
+            v.nextElementSibling.classList.toggle("activeClass")
+
+       })
+    })
+</script>
+
+</html>

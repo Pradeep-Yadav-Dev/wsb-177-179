@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+        }
+
+        .box {
+            width: 200px;
+            
+            background-color: aqua;
+            margin: 20px;
+            font-size: 35px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h2>jodhpur</h2>
+        <h3>jaipur</h3> 
+        1111
+    </div>
+
+    <div class="box">
+        <h2>jodhpur</h2>
+        <h3>jaipur</h3>
+         222
+    </div>
+
+    <div class="box">
+        <h2>jodhpur</h2>
+        <h3>jaipur</h3>
+         333
+    </div>
+    <div class="box">
+        <h2>jodhpur</h2>
+        <h3>jaipur</h3>
+         4444
+    </div>
+    <div class="box">
+        <h2>jodhpur</h2>
+        <h3>jaipur</h3>
+         5555
+    </div>
+
+</body>
+<script>
+    let allBox = document.querySelectorAll(".box")
+
+    allBox.forEach((a, b) => {
+        a.addEventListener("click", () => {
+            //  console.log(a.nextElementSibling)
+            // console.log(a.nextSibling)
+
+            // console.log(a.previousElementSibling)
+            // console.log(a.previousSibling)
+
+            // console.log(a.children[1])
+
+            // console.log(a.lastChild)
+            // console.log(a.lastElementChild)
+
+            // console.log(a.firstChild)
+            // console.log(a.firstElementChild)
+
+
+        })
+    })
+
+</script>
+
+</html>

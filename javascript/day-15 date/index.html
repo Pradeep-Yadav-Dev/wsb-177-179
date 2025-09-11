@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            width: 280px;
+            padding: 25px;
+            border: 2px solid red;
+            display: flex;
+            margin: 60px auto;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="main">
+        <h1>6 :</h1>
+        <h1>59 :</h1>
+        <h1>12 :</h1>
+        <h1>PM</h1>
+    </div>
+
+</body>
+<script>
+
+    let allH1=document.querySelectorAll("h1")
+
+    let times = setInterval(() => {
+
+        let currentTime = new Date()
+
+        if(currentTime.getHours()>12){
+             allH1[0].innerHTML=currentTime.getHours()-12 + ":"
+        }
+        else{
+             allH1[0].innerHTML=currentTime.getHours()+ ":"
+        }
+
+        /////////////////
+
+        allH1[1].innerHTML=currentTime.getMinutes()+ ":"
+        ////////
+         allH1[2].innerHTML=currentTime.getSeconds()+ ":"
+         /////
+
+         if(currentTime.getHours()>11){
+            allH1[3].innerHTML="PM"
+         }
+         else{
+               allH1[3].innerHTML="AM"
+         }
+        
+       
+
+    }, 1000)
+
+
+
+
+
+
+
+    /////////////////////////////////////////
+    // let currentDate = new Date()
+
+    // console.log(currentDate.getTime())
+
+    // let a = 0
+
+    // let myTime = setInterval(() => {
+    //     a++
+    //     console.log(a)
+    // }, 2000)
+
+    // clearInterval(myTime)
+    ///////////////////////////////////////////////////////////////////////////////
+    // let newTime=setTimeout(()=>{
+    //     console.log("hello modal")
+    // },2000)
+
+
+    // clearTimeout(newTime)
+
+
+
+
+
+</script>
+
+</html>
+
+
+

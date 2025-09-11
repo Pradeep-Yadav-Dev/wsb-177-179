@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .overlay{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.24);
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: -99;
+            display: none;
+        }
+        .modal{
+            width: 600px;
+            height: 300px;
+            background-color: red;
+            position: absolute;
+            left: 40%;
+            top: 10%;
+            transition: 1s;
+        }
+
+        .active{
+            top: 10%;
+        }
+
+        .activeDisplay{
+            display: block !important;
+        }
+        
+    </style>
+</head>
+<body>
+   <div class="overlay">
+     <div class="modal ">
+        <span> X </span>
+    </div>
+   </div>
+
+    <button> show modal </button>
+</body>
+
+<script>
+    let btn=document.querySelector("button")
+    let modal=document.querySelector(".modal")
+    let cross=document.querySelector("span")
+     let overlay=document.querySelector(".overlay")
+
+    btn.addEventListener("click" , ()=>{
+        modal.classList.add("active")
+        overlay.classList.add("activeDisplay")
+    })
+
+    cross.addEventListener("click" ,()=>{
+        overlay.classList.remove("activeDisplay")
+    })
+
+    overlay.addEventListener("click",(e)=>{
+        console.log(e.target==overlay){
+            
+        }
+        overlay.classList.remove("activeDisplay")
+    })
+</script>
+</html>

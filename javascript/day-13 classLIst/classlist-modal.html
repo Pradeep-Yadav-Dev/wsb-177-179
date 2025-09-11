@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 1200px;
+            margin: auto;
+            padding: 10px;
+            border: 2px solid red;
+            transition: 1s;
+        }
+
+        .active{
+            background-color: #ccc;
+            color: red;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main ">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, optio repellendus rerum similique labore possimus iusto non deleniti distinctio, facilis ullam expedita eveniet amet dolores veritatis ratione impedit? Voluptas, repudiandae.
+    </div>
+
+    <button onclick="addClass()" > add css</button>
+    <button onclick="removeClass()" > remove css</button>
+     <button onclick="toggleClass()" > toggle css</button>
+    
+</body>
+
+<script>
+    let main=document.querySelector(".main")
+
+    let addClass=function(){
+    //    main.style.color="red"
+    //    main.style.backgroundColor="#ccc"
+
+        main.classList.add("active")
+    }
+
+    let removeClass=()=>{
+        main.classList.remove("active")
+    }
+
+    let toggleClass=()=>{
+        main.classList.toggle("active")
+    }
+
+</script>
+</html>
